@@ -50,7 +50,7 @@ header{
     width: calc(100% / 2 - 2rem / 2);
     display: inline-block;
     margin: 0 0.5rem 1rem;gi
-    font-size: 18px;
+    font-size: 17px;
 }
 .box-left{
     margin-left: 0;
