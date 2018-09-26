@@ -49,7 +49,7 @@ header{
 .block {
     width: calc(100% / 2 - 2rem / 2);
     display: inline-block;
-    margin: 0 0.5rem 1rem;
+    margin: 0 0.5rem 1rem;gi
     font-size: 18px;
 }
 .box-left{
