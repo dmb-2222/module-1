@@ -75,3 +75,8 @@ a {
     margin-bottom: 40px;
     background: white;
 }
+.center{
+    margin: auto;
+    display: inline;
+    text-align: center;
+}
