@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    box-sizing: border-box;
+}
+body {
+    /* объявляем несколько счетчиков, задав
+    переменные с произвольными именами 
+    count-box, count-block и headline, 
+    для count-block задано начальное значение 100 */ 
+    counter-reset: count-box;
+  }
+  .wrapper{
+  width: 480px;
+  margin: auto;
+  background-color: #3B6050;
+  padding: 10px 20px 10px 15px;
+}
+li{
+    font-size: 20px;
+    counter-increment:count-box;
+}
+/* .box{
+    counter-increment:count-box;
+}
+.box::before{
+    content: counter(count-box);
+} */
+
+li::before{
+    display: inline-block;
+    line-height:30px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    background: grey;
+    content: counter(count-box, upper-roman);
+    border: 1px solid;
+}
