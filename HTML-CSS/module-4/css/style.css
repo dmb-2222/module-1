@@ -29,9 +29,12 @@ p {
   float: left;
   margin-right: 456px;
 }
+nav{
+    float: right;
+}
 .float-nav li {
   float: left;
-  margin-right: 52px;
+  margin-right: 20px;
 }
 .float-nav li:last-child {
   margin-right: 0;
@@ -112,6 +115,7 @@ p {
 .img-box {
   width: 350px;
   height: 252px;
+  margin-bottom: 30px;
 }
 .img-blog {
   max-width: 100%;
