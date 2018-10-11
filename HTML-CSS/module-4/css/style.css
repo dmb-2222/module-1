@@ -4,9 +4,6 @@
   font-size: 0;
   box-sizing: border-box;
 }
-body {
-  padding-top: 20px;
-}
 h2 {
   font-size: 30px;
   text-transform: uppercase;
@@ -22,12 +19,16 @@ p {
   font-size: 14px;
 }
 .wrapper {
+  padding-top: 20px;
   width: 1120px;
   margin: auto;
 }
+header {
+  overflow: hidden;
+  height: 21px;
+}
 .logo-float-nav {
   float: left;
-  margin-right: 456px;
 }
 .nav-menu{
     float: right;
@@ -35,6 +36,11 @@ p {
 .float-nav li {
   float: left;
   margin-right: 20px;
+}
+.clearfix li::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .float-nav li:last-child {
   margin-right: 0;
@@ -53,12 +59,15 @@ p {
 }
 .main-name {
   text-align: center;
-  clear: left;
   padding-top: 60px;
 }
-.lineh2 {
-  padding-top: 30px;
-  margin-bottom: 80px;
+.lineh2::after {
+  content: '';
+  display: block;
+  height: 7px;
+  width: 164px;
+  background: #33cc99;
+  margin: 25px auto;
 }
 .shop li {
   float: left;
