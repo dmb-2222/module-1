@@ -69,6 +69,9 @@ header {
   background: #33cc99;
   margin: 25px auto;
 }
+.shop{
+  height: 685px;
+}
 .shop li {
   float: left;
   width: 260px;
@@ -112,6 +115,9 @@ header {
   content: "$";
   font-size: 17px;
 }
+.blog{
+  height: 490px;
+}
 .blog li {
   width: 350px;
   float: left;
@@ -136,9 +142,14 @@ header {
     height: 252px;
     object-fit: cover;
   }
-.blog-line {
-  margin-top: 20px;
-  padding-bottom: 20px;
+.blog-line::after {
+  content: '';
+  width: 136px;
+  height: 3px;
+  display: block;
+  background: #33cc99;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .blog-button {
   font-size: 15px;
