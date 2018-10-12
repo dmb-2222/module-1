@@ -71,6 +71,7 @@ header {
 }
 .shop{
   height: 685px;
+  overflow: hidden;
 }
 .shop li {
   float: left;
