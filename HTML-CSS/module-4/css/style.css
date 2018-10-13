@@ -37,7 +37,7 @@ header {
   float: left;
   margin-right: 20px;
 }
-.clearfix li::after {
+.clearfix::after {
   content: "";
   display: table;
   clear: both;
@@ -59,7 +59,7 @@ header {
 }
 .main-name {
   text-align: center;
-  padding-top: 60px;
+  padding-top: 40px;
 }
 .lineh2::after {
   content: '';
@@ -68,10 +68,6 @@ header {
   width: 164px;
   background: #33cc99;
   margin: 25px auto;
-}
-.shop{
-  height: 685px;
-  overflow: hidden;
 }
 .shop li {
   float: left;
@@ -116,9 +112,6 @@ header {
   content: "$";
   font-size: 17px;
 }
-.blog{
-  height: 490px;
-}
 .blog li {
   width: 350px;
   float: left;
@@ -127,7 +120,6 @@ header {
 .blog li:last-child {
   margin-right: 0;
 }
-
 .img-box {
   width: 350px;
   height: 252px;
