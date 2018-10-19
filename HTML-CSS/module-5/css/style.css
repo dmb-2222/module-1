@@ -42,11 +42,6 @@ header {
   float: left;
   margin-right: 20px;
 }
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
 .float-nav li:last-child {
   margin-right: 0;
 }
@@ -74,7 +69,7 @@ header {
   filter: brightness(40%);
 }
 .slider-text {
-  width: 830px;
+  width: 550px;
   text-transform: uppercase;
   color: white;
   position: absolute;
@@ -84,25 +79,30 @@ header {
   margin: auto;
   line-height: 40px;
 }
-.slider-text::before {
-  content: "\003C";
+.slider-left-swipe {
+  position: absolute;
+  left: 330px;
+  top: 220px;
   font-size: 90px;
+  color: #ffff;
   width: 80px;
   height: 80px;
   text-align: center;
   line-height: 80px;
-  background: #589a8b;
+  background-color: #589a8b;
   opacity: 0.8;
-  margin-right: 60px;
-  float: left;
+  z-index: 10;
 }
-.slider-text:hover::before{
-  background: #10d6a8;
+.slider-left-swipe:hover{
+  background-color: #10d6a8;
   opacity: 0.9;
 }
-.slider-text-h1::after {
-  content: "\003E";
+.slider-right-swipe {
+  position: absolute;
   font-size: 90px;
+  right: 330px;
+  top: 220px;
+  color: #ffff;
   width: 80px;
   height: 80px;
   text-align: center;
@@ -110,11 +110,13 @@ header {
   background: #589a8b;
   opacity: 0.8;
   display: inline-block;
-  margin-left: 60px;
+  z-index: 10;
 }
-.slider-text-p {
-  padding-left: 140px;
+.slider-right-swipe:hover{
+  background-color: #10d6a8;
+  opacity: 0.9;
 }
+
 .clearfix::after {
   content: "";
   display: table;
