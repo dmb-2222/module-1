@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin-bottom: 15px;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  padding-top: 20px;
+  height: 30px;
+  padding-bottom: 100px;
+}
+li {
+  list-style: none;
+}
+h3 {
+  font-style: italic;
+}
+h4 {
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+h5 {
+  text-transform: uppercase;
+  opacity: 0.6;
+  font-style: italic;
+}
+.logo {
+  float: left;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  text-transform: uppercase;
+  color: #a2d4c6;
+}
+.heder-menu-item {
+  margin-right: 20px;
+}
+.heder-menu-item:hover {
+  color: #d98080;
+}
+.heder-menu-item:last-child {
+  margin-right: 0;
+}
+.heder-menu-item:hover::after {
+  content: "";
+  background: #d98080;
+  max-width: 80px;
+  height: 4px;
+  display: block;
+  margin-top: 10px;
+}
+.main-text {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 40px;
+}
+.main-text:after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #d98080;
+  display: inline-block;
+  margin-top: 50px;
+}
+.section-container {
+  max-width: 1150px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.section-container-item {
+  width: 325px;
+  margin-bottom: 100px;
+  display: flex;
+  position: relative;
+}
+.section-container-item:nth-child(n + 4) {
+  margin-bottom: 50px;
+}
+.text-section {
+  position: absolute;
+  left: 50px;
+}
+.pargraph {
+  max-width: 950px;
+  margin: 20px auto;
+  text-align: center;
+  opacity: 0.7;
+  padding-bottom: 30px;
+}
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.team-item {
+  text-align: center;
+  line-height: 20px;
+}
+/* как центрировать картинку которая вставляется через img ? */
+.img-team {
+  width: 380px;
+  height: 470px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
+  transition: transform 0.2s;
+}
+.img-team:hover {
+  transform: translate(-15px, -15px);
+  transition: transform 0.2s;
+}
+.img-team:hover .social-icone {
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+.img-team:hover .img-team-fon {
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+.img-team-fon {
+  width: 380px;
+  height: 470px;
+  position: absolute;
+  opacity: 0;
+  background: linear-gradient(to top, rgba(255, 173, 97, 0.6), rgba(214, 181, 32, 0.6));
+}
+.social-icone {
+  position: absolute;
+  width: 220px;
+  height: 56px;
+  top: 200px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  opacity: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.line {
+  background: #e4dcdc;
+  height: 1px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.footer-text {
+  display: flex;
+  justify-content: space-between;
+}
+.laaqqic {
+  color: #d98080;
+}
+.submit {
+  border: 1px solid;
+}
+.subscribe {
+  color: #ffff;
+  background: #95e1d3;
+  border: 0;
+  padding: 10px 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.input {
+  border: 0;
+  font-style: italic;
+  padding: 10px;
+}
+.sprite {
+  background-image: url(../image/spritesheet.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.sprite-icone {
+  background-image: url(../image/spritesheet-icone.png);
+  background-repeat: no-repeat;
+  margin-right: 1px;
+  background-color: #fce38a;
+}
+.sprite-icone:hover {
+  background-color: #95e1d3;
+}
+.sprite-icone-facebook {
+  width: 55px;
+  height: 56px;
+  background-position: -5px -5px;
+}
+.sprite-icone-twitter {
+  width: 55px;
+  height: 56px;
+  background-position: -70px -71px;
+}
+.sprite-icone-pinterest {
+  width: 55px;
+  height: 56px;
+  background-position: -5px -71px;
+}
+.sprite-icone-instagram {
+  width: 56px;
+  height: 56px;
+  background-position: -70px -5px;
+}
+.sprite-photography {
+  width: 32px;
+  height: 31px;
+  background-position: -125px -5px;
+}
+.sprite-web-design {
+  width: 32px;
+  height: 32px;
+  background-position: -5px -88px;
+}
+.sprite-creativity {
+  width: 32px;
+  height: 28px;
+  background-position: -5px -5px;
+}
+.sprite-seo {
+  width: 32px;
+  height: 32px;
+  background-position: -125px -46px;
+}
+.sprite-css_html {
+  width: 32px;
+  height: 31px;
+  background-position: -47px -5px;
+}
+.sprite-digital {
+  width: 32px;
+  height: 32px;
+  background-position: -5px -46px;
+}
