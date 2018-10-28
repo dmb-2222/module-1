@@ -36,6 +36,7 @@ justify-content: flex-end;
 max-width: 940px;
 position: relative;
 }
+/* Для logo я мог сделать с помощью align-self ?*/
 .logo{
     position: absolute;
     top:0;
