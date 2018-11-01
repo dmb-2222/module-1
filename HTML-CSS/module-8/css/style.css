@@ -160,9 +160,10 @@ h4 {
   }
   .partners {
     max-width: 940px;
+    justify-content: space-between;
   }
   .partners-item {
-    width: 25%;
+    width: 23%;
   }
 }
 .sprite {
