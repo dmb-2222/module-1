@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.item{
+    height: 200px;
+    background: pink;
+    text-align: center;
+    line-height:200px;
+}
+.item2{
+    height: 200px;
+    background: green;
+    text-align: center;
+    line-height:200px;
+}
+.item3{
+    height: 200px;
+    background: rgb(35, 159, 231);
+    text-align: center;
+    line-height:200px;
+}
+.item4{
+    height: 200px;
+    background: rgb(13, 219, 75);
+    text-align: center;
+    line-height:200px;
+}
+.item5{
+    height: 200px;
+    background: rgb(174, 219, 13);
+    text-align: center;
+    line-height:200px;
+}
