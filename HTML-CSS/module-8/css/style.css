@@ -10,18 +10,16 @@ a {
   text-decoration: none;
   color: #fff;
 }
-.container {
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
-}
-.section {
+.box-header-main{
   background-image: url(../images/fon-mobile.jpg);
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   padding-left: 3%;
   padding-right: 3%;
+}
+.section {
+  min-width: 320px;
 }
 h1,
 .logo-text {
@@ -31,13 +29,13 @@ h1,
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* align-items: center; */
   padding-top: 20px;
 }
 .menu-item {
   margin-right: 40px;
   padding: 10px 20px;
   font-size: 20px;
+  border: transparent 3px solid;
 }
 .menu-item:hover {
   border: 3px solid #fff;
@@ -127,8 +125,11 @@ h4 {
     max-width: 70%;
     text-align: left;
   }
-  .section {
+  .box-header-main {
     background-image: url(../images/fon-tablet.jpg);
+  }
+  .section {
+    min-width: 768px;
   }
   .menu {
     display: flex;
@@ -152,8 +153,11 @@ h4 {
   }
 }
 @media (min-width: 940px){
-  .section {
+  .box-header-main {
     background-image: url(../images/dextop.jpg);
+  }
+  .section {
+    min-width: 940px;
   }
   .partner-box {
     max-width: 940px;
