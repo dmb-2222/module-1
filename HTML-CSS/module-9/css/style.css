@@ -42,6 +42,7 @@ h4 {
   padding-left: 3%;
   padding-right: 3%;
   padding-top: 15px;
+  text-align: center;
 }
 .container {
   max-width: 100%;
@@ -70,9 +71,6 @@ h4 {
 }
 .logo-text {
   font-size: 20px;
-}
-.main {
-  text-align: center;
 }
 .button {
   color: #fff;
