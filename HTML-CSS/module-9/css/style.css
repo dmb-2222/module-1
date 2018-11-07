@@ -34,19 +34,25 @@ h4 {
   font-size: 14px;
   line-height: 20px;
 }
-.box-header-main {
+.header {
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  top: 15px;
+  right: 0;
+  left: 0;
+}
+.main-background {
   background-image: url(../images/fon-mobile.jpg);
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-left: 3%;
-  padding-right: 3%;
-  padding-top: 15px;
   text-align: center;
+  z-index: 1;
 }
-.container {
-  max-width: 100%;
-  margin: 0 auto;
+.box-main-text {
+  position: relative;
+  top: 250px;
 }
 .section {
   min-width: 320px;
@@ -54,10 +60,10 @@ h4 {
   margin: 0 auto;
 }
 .menu-item {
-  text-align: center;
   padding: 5px 10px;
   font-size: 20px;
   border: transparent 3px solid;
+  display: inline-block;
 }
 .menu-item:hover {
   border: 3px solid #fff;
@@ -126,7 +132,11 @@ h4 {
     margin: auto;
     margin-bottom: 80px;
   }
-  .box-header-main {
+  .header {
+right: 0;
+left: 1px;
+  }
+  .main-background {
     background-image: url(../images/fon-tablet.jpg);
   }
   .section {
@@ -146,8 +156,8 @@ h4 {
     max-width: 420px;
   }
 }
-@media (min-width: 940px){
-  .box-header-main {
+@media (min-width: 940px) {
+  .main-background {
     background-image: url(../images/dextop.jpg);
   }
   .section {

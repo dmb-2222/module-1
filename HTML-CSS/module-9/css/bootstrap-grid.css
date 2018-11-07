@@ -18,30 +18,29 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  /* padding-right: 15px;
+  padding-left: 15px; */
   margin-right: auto;
   margin-left: auto;
 }
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
   .container {
     max-width: 540px;
   }
-}
+} */
 
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
+    min-width: 768px;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 940px) {
   .container {
-    max-width: 960px;
+    min-width: 940px;
   }
 }
 
@@ -64,8 +63,8 @@ html {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  /* margin-right: -15px;
+  margin-left: -15px; */
 }
 
 .no-gutters {
@@ -88,8 +87,8 @@ html {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  /* padding-right: 15px;
+  padding-left: 15px; */
 }
 
 .col {
