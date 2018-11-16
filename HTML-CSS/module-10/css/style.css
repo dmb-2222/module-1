@@ -209,7 +209,6 @@ header {
   text-align: center;
   line-height: 20px;
 }
-/* как центрировать картинку которая вставляется через img ? */
 .team__img {
   width: 380px;
   height: 470px;
@@ -335,72 +334,4 @@ header {
 }
 .team_svg:hover{
   fill: #ffffff;
-}
-
-
-
-
-.sprite {
-  background-image: url(../image/spritesheet.png);
-  background-repeat: no-repeat;
-  display: inline-block;
-}
-.sprite-icone {
-  background-image: url(../image/spritesheet-icone.png);
-  background-repeat: no-repeat;
-  margin-right: 1px;
-  background-color: #fce38a;
-}
-.sprite-icone:hover {
-  background-color: #95e1d3;
-}
-.sprite-icone-facebook {
-  width: 55px;
-  height: 56px;
-  background-position: -5px -5px;
-}
-.sprite-icone-twitter {
-  width: 55px;
-  height: 56px;
-  background-position: -70px -71px;
-}
-.sprite-icone-pinterest {
-  width: 55px;
-  height: 56px;
-  background-position: -5px -71px;
-}
-.sprite-icone-instagram {
-  width: 56px;
-  height: 56px;
-  background-position: -70px -5px;
-}
-.sprite-photography {
-  width: 32px;
-  height: 31px;
-  background-position: -125px -5px;
-}
-.sprite-web-design {
-  width: 32px;
-  height: 32px;
-  background-position: -5px -88px;
-}
-.sprite-creativity {
-  width: 32px;
-  height: 28px;
-  background-position: -5px -5px;
-}
-.sprite-seo {
-  width: 32px;
-  height: 32px;
-  background-position: -125px -46px;
-}
-.sprite-css_html {
-  width: 32px;
-  height: 31px;
-  background-position: -47px -5px;
-}
-.sprite-digital {
-  width: 32px;
-  height: 32px;
-  background-position: -5px -46px;
 }
