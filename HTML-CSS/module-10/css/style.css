@@ -51,18 +51,18 @@ header {
   height: 30px;
   padding-bottom: 100px;
 }
-.text__slider {
+.text-slider {
   color: #fff;
   text-align: center;
   width: 800px;
   margin: 150px auto;
 }
-.text__slider--pre {
-  font-family: KaushanScript-Regular, AdobeInvisFont, MyriadPro-Regular;
+.text-slider__pre {
+  font-family: KaushanScript-Regular;
   font-size: 65px;
 }
-.text__slider--main {
-  font-family: Montserrat-Bold, AdobeInvisFont, MyriadPro-Regular;
+.text-slider__main {
+  font-family: Montserrat-Bold;
   font-size: 120px;
   text-transform: uppercase;
   font-weight: 800;
@@ -88,7 +88,7 @@ header {
   display: table;
   clear: both;
 }
-.header__menu {
+.nav {
   width: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,13 +103,13 @@ header {
   position: absolute;
   right: 10%;
 }
-.heder__menu__item:hover {
+.nav__item:hover {
   color: #fce38a;
 }
-.heder__menu__item:last-child {
+.nav__item:last-child {
   margin-right: 0;
 }
-.heder__menu__item:hover::after {
+.nav__item:hover::after {
   content: "";
   background: #fce38a;
   max-width: 80px;
@@ -118,18 +118,18 @@ header {
   margin-top: 10px;
 }
 /* Сделал в качестве эксперемента через CSS */
-.header__icone {
+.nav__icone {
   cursor: pointer;
   -webkit-transition-duration: 1s;
        -o-transition-duration: 1s;
           transition-duration: 1s;
 }
-.header__icone--search {
+.nav__icone--search {
   background-image: url(../image/GLASS.svg);
   width: 18px;
   height: 18px;
 }
-.header__icone--search:hover {
+navr__icone--search:hover {
   -webkit-transform: scale(2);
       -ms-transform: scale(2);
           transform: scale(2);
@@ -137,7 +137,7 @@ header {
        -o-transition-duration: 1s;
           transition-duration: 1s;
 }
-.header__icone--card:hover {
+.nav__icone--card:hover {
   -webkit-transform: scale(2);
       -ms-transform: scale(2);
           transform: scale(2);
@@ -145,13 +145,13 @@ header {
        -o-transition-duration: 1s;
           transition-duration: 1s;
 }
-.main__text {
+.main-text {
   max-width: 400px;
   margin: 0 auto;
   text-align: center;
   line-height: 40px;
 }
-.main__text:after {
+.main-text:after {
   content: "";
   width: 60px;
   height: 4px;
@@ -159,7 +159,7 @@ header {
   display: inline-block;
   margin-top: 50px;
 }
-.section__container {
+.section {
   max-width: 1150px;
   margin: 50px auto;
   display: -webkit-box;
@@ -172,7 +172,7 @@ header {
           justify-content: space-between;
   margin-bottom: 20px;
 }
-.section__container__item {
+.section-container-item {
   width: 325px;
   margin-bottom: 100px;
   display: -webkit-box;
@@ -180,10 +180,10 @@ header {
   display: flex;
   position: relative;
 }
-.section__container__item:nth-child(n + 4) {
+.section-container-item:nth-child(n + 4) {
   margin-bottom: 50px;
 }
-.section__container__text {
+.section-container__text {
   position: absolute;
   left: 50px;
 }
@@ -334,4 +334,42 @@ header {
 }
 .team_svg:hover{
   fill: #ffffff;
+}
+
+
+
+.sprite {
+  background-image: url(../image/spritesheet.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.sprite--photography {
+  width: 32px;
+  height: 31px;
+  background-position: -125px -5px;
+}
+.sprite--web-design {
+  width: 32px;
+  height: 32px;
+  background-position: -5px -88px;
+}
+.sprite--creativity {
+  width: 32px;
+  height: 28px;
+  background-position: -5px -5px;
+}
+.sprite--seo {
+  width: 32px;
+  height: 32px;
+  background-position: -125px -46px;
+}
+.sprite--css-html {
+  width: 32px;
+  height: 31px;
+  background-position: -47px -5px;
+}
+.sprite--digital {
+  width: 32px;
+  height: 32px;
+  background-position: -5px -46px;
 }
