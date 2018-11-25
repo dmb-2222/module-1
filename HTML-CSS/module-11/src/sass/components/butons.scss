@@ -1,0 +1,19 @@
+.btn {
+  background-color: transparent;
+  color: $classic-color;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn--slider {
+  border: 3px solid;
+  padding: 12px 45px;
+}
+.btn--slider:hover {
+  color: $btn--slider-color;
+}
+.btn--subscribe {
+  background: $btn--subscribe-color;
+  border: 0;
+  padding: 10px 20px;
+  font-weight: 700;
+}

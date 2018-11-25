@@ -1,0 +1,19 @@
+/*
+   Import partials below
+*/
+@import './helpers/variables';
+@import './normalize';
+@import './base';
+
+// Components
+
+@import './components/container';
+@import './components/page-header';
+@import './components/page-nav';
+@import './components/butons';
+@import './components/page-logo';
+@import './components/page-team';
+@import './components/text-slider';
+@import './components/footer.scss';
+@import './components/sprite-png.scss';
+@import './components/commons.scss';
