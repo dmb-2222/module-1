@@ -1,0 +1,23 @@
+.footer__line {
+  background: $footer__line-color;
+  height: 1px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.footer__text {
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.footer__laaqqic {
+  color: $main-text-color-after;
+}
+.footer__submit {
+  border: 1px solid;
+}
+.footer__input {
+    border: 0;
+    font-style: italic;
+    padding: 10px;
+  }

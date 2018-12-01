@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.box-header-main{
+  background-image: url(../images/fon-mobile.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.section {
+  min-width: 320px;
+}
+h1,
+.logo-text {
+  text-transform: uppercase;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+.menu-item {
+  margin-right: 40px;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: transparent 3px solid;
+}
+.menu-item:hover {
+  border: 3px solid #fff;
+  border-radius: 20px;
+}
+.menu li:nth-child(2) {
+  margin-right: 0;
+}
+.menu-logo {
+  width: 100%;
+  margin-top: 100px;
+  text-align: center;
+}
+.main-text {
+  text-align: center;
+  color: #fff;
+  margin-top: 40px;
+}
+h2 {
+  opacity: 0.6;
+}
+.button {
+  color: #fff;
+  background: rgb(248, 7, 7);
+  border: 0;
+  padding: 10px 55px;
+  border-radius: 20px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.partner-box {
+  max-width: 260px;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin: auto;
+  margin-top: 50px;
+}
+.text-partner {
+  text-align: center;
+  font-size: 22px;
+}
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 200px;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 20px;
+  text-align: center;
+}
+h4 {
+  font-size: 14px;
+  line-height: 20px;
+}
+.info-person {
+  font-size: 14px;
+  opacity: 0.6;
+}
+.partners-foto {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.see-other {
+  width: 240px;
+  height: 40px;
+  line-height: 40px;
+  margin: 25px auto;
+  text-align: center;
+  border: 2px solid rgb(243, 16, 16);
+  border-radius: 20px;
+}
+.see-other a {
+  color: rgb(243, 16, 16);
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 52px;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .menu-logo {
+    order: 9;
+    margin-top: 14px;
+    max-width: 70%;
+    text-align: left;
+  }
+  .box-header-main {
+    background-image: url(../images/fon-tablet.jpg);
+  }
+  .section {
+    min-width: 768px;
+  }
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 110px;
+  }
+  .menu-item {
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    order: 10;
+  }
+  .partner-box {
+    max-width: 500px;
+  }
+  .partners {
+    max-width: 420px;
+  }
+  .partners-item {
+    width: 50%;
+  }
+}
+@media (min-width: 940px){
+  .box-header-main {
+    background-image: url(../images/dextop.jpg);
+  }
+  .section {
+    min-width: 940px;
+  }
+  .partner-box {
+    max-width: 940px;
+  }
+  .partners {
+    max-width: 940px;
+    justify-content: space-between;
+  }
+  .partners-item {
+    width: 23%;
+  }
+}
+.sprite {
+  background-image: url(../icone/spritesheet.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+}
+
+.sprite-icone-person1 {
+  width: 32px;
+  height: 32px;
+  background-position: -5px -5px;
+}
+
+.sprite-icone-person2 {
+  width: 32px;
+  height: 32px;
+  background-position: -47px -5px;
+}
+
+.sprite-icone-person3 {
+  width: 33px;
+  height: 32px;
+  background-position: -5px -47px;
+}
+
+.sprite-icone-persone4 {
+  width: 33px;
+  height: 32px;
+  background-position: -89px -5px;
+}

@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.item{
+    height: 200px;
+    background: pink;
+    text-align: center;
+    line-height:200px;
+}
+.item2{
+    height: 200px;
+    background: green;
+    text-align: center;
+    line-height:200px;
+}
+.item3{
+    height: 200px;
+    background: rgb(35, 159, 231);
+    text-align: center;
+    line-height:200px;
+}
+.item4{
+    height: 200px;
+    background: rgb(13, 219, 75);
+    text-align: center;
+    line-height:200px;
+}
+.item5{
+    height: 200px;
+    background: rgb(174, 219, 13);
+    text-align: center;
+    line-height:200px;
+}
+.container{
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+}
+.responsiv-grid{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-areas: 
+    'animal1 animal1 animal2 animal2'
+    'animal1 animal1 animal3 animal4'
+    'animal5 animal6 animal6 animal4'
+    ;
+}
+/* .responsiv-grid-item{
+    border: 2px solid;    
+} */
+.responsive-item-first{
+    grid-area: animal1;
+}
+.responsive-item-second{
+    grid-area: animal2;
+}
+.responsive-item-3{
+    grid-area: animal3;
+}
+.responsive-item-4{
+    grid-area: animal4;
+}
+.responsive-item-5{
+    grid-area: animal5;
+}
+.responsive-item-6{
+    grid-area: animal6;
+}

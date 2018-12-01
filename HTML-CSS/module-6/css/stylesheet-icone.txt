@@ -1,0 +1,29 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-icone-facebook {
+    width: 55px;
+    height: 56px;
+    background-position: -5px -5px;
+}
+
+.sprite-icone-instagram {
+    width: 56px;
+    height: 56px;
+    background-position: -70px -5px;
+}
+
+.sprite-icone-pinterest {
+    width: 55px;
+    height: 56px;
+    background-position: -5px -71px;
+}
+
+.sprite-icone-twitter {
+    width: 55px;
+    height: 56px;
+    background-position: -70px -71px;
+}
