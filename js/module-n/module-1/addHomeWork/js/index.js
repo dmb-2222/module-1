@@ -10,7 +10,7 @@ if (amount === null) {
 } else if (amount <= tabaAvailable) {
   let yes = confirm("Есть места в группе Таба, вы согласны?");
   {
-    if (yes === true) {
+    if (yes) {
       alert("Приятного путешествия в группе Taба");
     } else {
       alert("Нам очень жаль, приходите еще!");
@@ -20,7 +20,7 @@ if (amount === null) {
 else if (amount <= SharmAvailable) {
     let yes = confirm("Есть места в группе Шарм, вы согласны?");
   {
-    if (yes === true) {
+    if (yes) {
       alert("Приятного путешествия в группе Шарм");
     } else {
       alert("Нам очень жаль, приходите еще!");
@@ -30,7 +30,7 @@ else if (amount <= SharmAvailable) {
 else if (amount <= HurgadaAvailable) {
     let yes = confirm("Есть места в группе Хургада, вы согласны?");
   {
-    if (yes === true) {
+    if (yes) {
       alert("Приятного путешествия в группе Хургада");
     } else {
       alert("Нам очень жаль, приходите еще!");
