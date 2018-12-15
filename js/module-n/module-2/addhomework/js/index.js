@@ -7,7 +7,10 @@ do {
   userEnter = prompt("Введите ваш пароль");
   for (let i of passwords) {
     attempts = attempts - 1;
-    if (passwords.includes(userEnter)) {
+    if (userEnter === null) {
+      attempts = attempts - 3;
+      break;
+    } else if (passwords.includes(userEnter)) {
       alert("Добро пожаловать");
       attempts = attempts - 3;
       break;
