@@ -8,7 +8,7 @@ do {
     let asNumber = Number(userInput);
     if (Number.isNaN(asNumber) === true){
         alert('Было введено не число, попробуйте еще раз');
-    }else if (numbers.push(+userInput));
+    }else (numbers.push(asNumber));
     console.log(numbers);
 } while (userInput !== null);
 
