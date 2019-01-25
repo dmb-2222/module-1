@@ -79,7 +79,7 @@ if(change !== null) {
 }
 
 // Вызываем reset при любом исходе обслуживания
-mango.reset();
+let resetCustomerMoney = mango.reset();
 
 // Проверяем значения после reset
-console.log(mango.customerMoney); // 0
+console.log(resetCustomerMoney); // 0
