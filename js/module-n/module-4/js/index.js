@@ -36,8 +36,8 @@ function Cashier(name, productDatabase) {
     console.log("Очень жаль, вам не хватает денег на покупки");
   };
   this.reset = function() {
-    customerMoney = 0;
-    return customerMoney;
+    this.customerMoney = 0;
+    return this.customerMoney;
   };
 };
 /* Заказ пользователя хранится в виде объекта следующего формата. "имя-продукта":"количество-единиц" */
@@ -79,7 +79,7 @@ if(change !== null) {
 }
 
 // Вызываем reset при любом исходе обслуживания
-let resetCustomerMoney = mango.reset();
+mango.reset();
 
 // Проверяем значения после reset
-console.log(resetCustomerMoney); // 0
+console.log(mango.customerMoney); // 0
