@@ -18,21 +18,27 @@ const posts = [
     title: "Post title 1",
     text:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, nemo dignissimos ea temporibus voluptatem maiores maxime consequatur impedit nobis sunt similique voluptas accusamus consequuntur, qui modi nesciunt veritatis distinctio rem!",
-    link: "link-1.com"
+    link: "link-1.com",
+    released:'Released: 2002-03-14',
+    rating: 'Rating: 8.6'
   },
   {
     img: "https://placeimg.com/400/150/nature",
     title: "Post title 2",
     text:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, nemo dignissimos ea temporibus voluptatem maiores maxime consequatur impedit nobis sunt similique voluptas accusamus consequuntur, qui modi nesciunt veritatis distinctio rem!",
-    link: "link-2.com"
+    link: "link-2.com",
+    released:'Released: 2001-03-14',
+    rating: 'Rating: 2.6'
   },
   {
     img: "https://placeimg.com/400/150/arch",
     title: "Post title 3",
     text:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, nemo dignissimos ea temporibus voluptatem maiores maxime consequatur impedit nobis sunt similique voluptas accusamus consequuntur, qui modi nesciunt veritatis distinctio rem!",
-    link: "link-3.com"
+    link: "link-3.com",
+    released:'Released: 1999-03-14',
+    rating: 'Rating: 5.6'
   }
 ];
 
@@ -41,6 +47,7 @@ let body = document.querySelector("body");
 const createPostCard = function(obj) {
   // craete element HTML
   let cardFilms = document.createElement("div");
+  // console.log(cardFilms); ?????? спросить на паре
   let imgCard = document.createElement("img");
   let movieBodyDiv = document.createElement("div");
   let h2 = document.createElement("h2");
@@ -63,8 +70,8 @@ const createPostCard = function(obj) {
   //text content
   h2.textContent = obj.title;
   p.textContent = obj.text;
-  movieDateP.textContent = "Released: 1972-03-14";
-  movieRating.textContent = "Released: 1972-03-14";
+  movieDateP.textContent = obj.released;
+  movieRating.textContent = obj.rating;
 
   // paste el to html
   body.append(cardFilms);
@@ -83,3 +90,15 @@ const createCards = function(posts) {
   }
 };
 createCards(posts);
+
+// const summ = function (){
+//   let a =5;
+//   let b= 6;
+//   let c = a+b;
+//   return c
+// }
+// const summ2 = function() {
+//   let a = summ();
+//   return a
+// }
+// console.log(summ2());
