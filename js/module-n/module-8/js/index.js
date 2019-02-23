@@ -109,7 +109,7 @@ function changeImage(event) {
   console.log("event target: ", target); // посмотрите что тут
 
 // Проверяем imgPreview или нет, если нет то выходим
-if (target.nodeName !== imgPreview) return;
+if (target.jsImage !== imgPreview) return;
 }
 
 
