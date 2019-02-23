@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+li {
+  list-style-type: none; /* Убираем маркеры */
+  border: solid 1px;
+}
+.image-gallery{
+    display: block;
+    margin: 0 auto;
+    width: 1300px;
+    
+    /* text-align: center; */
+}
+.fullview{
+    margin: 0 auto;
+    text-align: center;
+}
+.preview{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 1300px;
+    margin: 0 auto;
+    
+    
+}
