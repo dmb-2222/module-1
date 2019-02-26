@@ -70,11 +70,42 @@ let imageGallery = document.querySelector(".image-gallery");
 // craete element HTML
 let divFullview = document.createElement("div");
 let imgfullview = document.createElement("img");
+// ======!!!!!!!!!!!!!===============================================
+// const el  = document.createElement('div');
+// const main = document.createElement('img');
+
+// el.addEventListener('click', function(e){
+// e.preventDefault();
+// if(this.classList.contains('img__active')){
+//   return;
+// }
+// const src = this.dataset.full;
+// document.querySelector('.img__active').classList.remove();
+// this.classList.add('.img__active');
+// main.src = src;
+// })
+
 let ulPreview = document.createElement("ul");
 
 for (let arr of galleryItems) {
   let liPreview = document.createElement("li");
   let imgPreview = document.createElement("img");
+
+  //  моя функция ==============================================
+
+imgPreview.addEventListener('click', function(e){
+  console.log(e);
+  e.preventDefault();
+  if(this.hasAttribute('src')){
+    const src = arr.fullview;
+    document.querySelector('.js-image-gallery').removeAttribute('src')
+    this.setAttribute('src', src);
+    imgfullview.src = src;
+    return;
+  }
+});
+
+//==========================================================
 
   // classes
   divFullview.classList.add("fullview");
@@ -98,19 +129,24 @@ for (let arr of galleryItems) {
   ulPreview.append(liPreview);
   liPreview.append(imgPreview);
 }
-const jsImage = document.querySelector(".js-image-gallery");
+//=======================================
 
-jsImage.addEventListener("click", changeImage);
 
-function changeImage(event) {
-  event.preventDefault();
 
-  const target = event.target;
-  console.log("event target: ", target); // посмотрите что тут
+//=======================================
+// const jsImage = document.querySelector(".js-image-gallery");
 
-// Проверяем imgPreview или нет, если нет то выходим
-if (target.jsImage !== imgPreview) return;
-}
+// jsImage.addEventListener("click", changeImage);
+
+// function changeImage(event) {
+//   event.preventDefault();
+
+//   const target = event.target;
+//   console.log("event target: ", target); // посмотрите что тут
+
+// // Проверяем imgPreview или нет, если нет то выходим
+// if (target.jsImage !== imgPreview) return;
+// }
 
 
 
