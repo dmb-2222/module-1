@@ -24,6 +24,9 @@ li {
     justify-content: space-between;
     width: 1300px;
     margin: 0 auto;
-    
-    
+
+}
+li:hover{
+  cursor: pointer;
+  border: solid 2px;
 }

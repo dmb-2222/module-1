@@ -113,7 +113,7 @@ imgPreview.addEventListener('click', function(e){
   console.log(atribute);
   if(this.hasAttribute('src')){
     const src = arr.fullview;
-    document.querySelector('.js-image-gallery').removeAttribute('src')
+    document.querySelector('.preview').removeAttribute('src')
     this.setAttribute('src', src);
     imgfullview.src = atribute;
     return;
