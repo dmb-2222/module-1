@@ -32,33 +32,33 @@
 
 const galleryItems = [
   {
-    preview: "img/preview-1.jpeg",
-    fullview: "img/fullview-1.jpeg",
+    preview: "img/preview1-1.jpeg",
+    fullview: "img/fullview1-1.jpeg",
     alt: "alt text 1"
   },
   {
-    preview: "img/preview-2.jpeg",
-    fullview: "img/fullview-2.jpeg",
+    preview: "img/preview2-2.jpeg",
+    fullview: "img/fullview2-2.jpeg",
     alt: "alt text 2"
   },
   {
-    preview: "img/preview-3.jpeg",
-    fullview: "img/fullview-3.jpeg",
+    preview: "img/preview3-3.jpeg",
+    fullview: "img/fullview3-3.jpeg",
     alt: "alt text 3"
   },
   {
-    preview: "img/preview-4.jpeg",
-    fullview: "img/fullview-4.jpeg",
+    preview: "img/preview4-4.jpeg",
+    fullview: "img/fullview4-4.jpeg",
     alt: "alt text 4"
   },
   {
-    preview: "img/preview-5.jpeg",
-    fullview: "img/fullview-5.jpeg",
+    preview: "img/preview5-5.jpeg",
+    fullview: "img/fullview5-5.jpeg",
     alt: "alt text 5"
   },
   {
-    preview: "img/preview-6.jpeg",
-    fullview: "img/fullview-6.jpeg",
+    preview: "img/preview6-6.jpeg",
+    fullview: "img/fullview6-6.jpeg",
     alt: "alt text 6"
   }
 ];
@@ -111,7 +111,7 @@ imgPreview.addEventListener('click', function(e){
   divFullview.classList.add("fullview");
   ulPreview.classList.add("preview");
   // attribute
-  imgfullview.setAttribute("src", "img/fullview-1.jpeg");
+  imgfullview.setAttribute("src", "img/fullview1-1.jpeg");
   imgfullview.setAttribute("alt", "alt text 1");
   imgfullview.setAttribute("width", "860px");
   imgfullview.setAttribute("height", "auto");
