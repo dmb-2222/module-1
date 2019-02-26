@@ -93,14 +93,29 @@ for (let arr of galleryItems) {
 
   //  моя функция ==============================================
 
+// imgPreview.addEventListener('click', function(e){
+//   console.log(e);
+//   e.preventDefault();
+//   if(this.hasAttribute('src')){
+//     const src = arr.fullview;
+//     document.querySelector('.js-image-gallery').removeAttribute('src')
+//     this.setAttribute('src', src);
+//     imgfullview.src = src;
+//     return;
+//   }
+// });
+
+
 imgPreview.addEventListener('click', function(e){
   console.log(e);
   e.preventDefault();
+  let atribute = this.getAttribute('data-fullview');
+  console.log(atribute);
   if(this.hasAttribute('src')){
     const src = arr.fullview;
     document.querySelector('.js-image-gallery').removeAttribute('src')
     this.setAttribute('src', src);
-    imgfullview.src = src;
+    imgfullview.src = atribute;
     return;
   }
 });
