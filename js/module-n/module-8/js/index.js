@@ -75,19 +75,22 @@ for (let arr of galleryItems) {
 
   //  моя функция ==============================================
 
-imgPreview.addEventListener('click', function (e){
-  console.log(e);
-  e.preventDefault(); // что бы не перезагружалась страница
-  let atribute = this.getAttribute('data-fullview');
-  console.log(atribute);
-  if(this.hasAttribute('data-fullview')){
-    this.setAttribute('src', atribute);
-    imgfullview.src = atribute;
-    return;
-  }
-});
+  imgPreview.addEventListener("click", function(e) {
+    imgfullview.src = this.dataset.fullview;
 
-//==========================================================
+    // imgfullview.src = this.dataset.fullview;
+    // console.log(imgfullview.src);
+    // e.preventDefault(); // что бы не перезагружалась страница
+    // let atribute = this.getAttribute('data-fullview');
+    // console.log(atribute);
+    // if(this.hasAttribute('data-fullview')){
+    //   this.setAttribute('src', atribute);
+    //   imgfullview.src = atribute;
+    //   return;
+    // }
+  });
+
+  //==========================================================
 
   // classes
   divFullview.classList.add("fullview");
@@ -111,11 +114,6 @@ imgPreview.addEventListener('click', function (e){
   ulPreview.append(liPreview);
   liPreview.append(imgPreview);
 }
-
-
-
-
-
 
 /*
     ⚠️ ЗАДАНИЕ ПОВЫШЕННОЙ СЛОЖНОСТИ - ВЫПОЛНЯТЬ ПО ЖЕЛАНИЮ
