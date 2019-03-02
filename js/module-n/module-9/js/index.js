@@ -43,7 +43,6 @@ let minutesContainer = document.querySelector(".js-time");
 // Доступ к кнопкам start lap stop
 let start = document.querySelector(".js-start");
 let lap = document.querySelector(".js-take-lap");
-let stop = document.querySelector(".js-start");
 let reset = document.querySelector(".js-reset");
 // Доступ куда будем записывать значение Lap
 let ulLap = document.querySelector(".js-laps");
@@ -54,6 +53,9 @@ function handleLap() {
     let li = document.createElement("li");
     li.textContent = upDateConterValue();
     ulLap.append(li);
+    // if (handleReset()){
+    //   li.remove();
+    // }
 }
 
 // запуск таймера
@@ -85,7 +87,12 @@ reset.addEventListener("click", handleReset);
 function handleReset() {
   clearInterval(timerId);
   counter = 0;
+  isActive = false;
+  start.textContent = "Start";
   minutesContainer.textContent = `00:00.0`;
+  
+  
+  
 }
 
 /*
