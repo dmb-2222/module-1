@@ -56,14 +56,13 @@ function startTime() {
 }
 
 
-
-//  Это не смотреть!
 let start = document.querySelector(".js-start");
 start.addEventListener("click", function(e) {
   const timerId = setInterval(startTime, 10);
+//  Это не смотреть!
 //   this.textContent = "Pause";
 //   console.log(this.textContent);
-// //  Это не смотреть!
+
 //   if (this.textContent === "Pause") {
 //     start.addEventListener("click", function(e) {
 //       this.textContent = "Start";
