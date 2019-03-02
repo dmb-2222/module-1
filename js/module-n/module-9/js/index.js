@@ -35,41 +35,58 @@
   - Функционал кнопки button.js-take-lap при клике - сохранение текущего времени секундомера 
     в массив и добавление в ul.js-laps нового li с сохраненным временем в формате xx:xx.x
 */
-let begin = 0;
-function startTime() {
-  begin++;
-  let miliseconds = begin % 100;
-  let sec = Math.floor((begin / 100) % 60);
-  let min = Math.floor((begin / 6000) % 60);
-  sec = sec < 10 ? `0${sec}` : sec;
-  min = min < 10 ? `0${min}` : min;
-  let minutesContainer = document.querySelector(".js-time");
-  minutesContainer.textContent = `${min}:${sec}:${miliseconds}`;
-  // Запись laps
-  let lap = document.querySelector(".js-take-lap");
-  let ulLap = document.querySelector(".js-laps");
-  lap.addEventListener("click", function(e){
-    let li = document.createElement('li')
-    li.textContent = `${min}:${sec}:${miliseconds}`;
+let counter = 0;
+let timerId = null;
+let isActive = false;
+// Доступ к значению секундомера
+let minutesContainer = document.querySelector(".js-time");
+// Доступ к кнопкам start lap stop
+let start = document.querySelector(".js-start");
+let lap = document.querySelector(".js-take-lap");
+let stop = document.querySelector(".js-start");
+let reset = document.querySelector(".js-reset");
+// Доступ куда будем записывать значение Lap
+let ulLap = document.querySelector(".js-laps");
+
+// Запись laps
+lap.addEventListener("click", handleLap);
+function handleLap() {
+    let li = document.createElement("li");
+    li.textContent = upDateConterValue();
     ulLap.append(li);
-  })
 }
 
-
-let start = document.querySelector(".js-start");
-start.addEventListener("click", function(e) {
-  const timerId = setInterval(startTime, 10);
-//  Это не смотреть!
-//   this.textContent = "Pause";
-//   console.log(this.textContent);
-
-//   if (this.textContent === "Pause") {
-//     start.addEventListener("click", function(e) {
-//       this.textContent = "Start";
-//       clearTimeout(timerId);
-//     });
-//   }
-});
+// запуск таймера
+start.addEventListener("click", handleStart);
+function handleStart() {
+  if (!isActive) {
+    isActive = true;
+    timerId = setInterval(upDateConterValue, 10);
+    start.textContent = "Pause";
+  } else if (isActive) {
+    isActive = false;
+    clearInterval(timerId);
+    start.textContent = "Continue";
+  }
+}
+// Изменение данных в таймере
+function upDateConterValue() {
+  counter++;
+  let miliseconds = counter % 100;
+  let sec = Math.floor((counter / 100) % 60);
+  let min = Math.floor((counter / 6000) % 60);
+  sec = sec < 10 ? `0${sec}` : sec;
+  min = min < 10 ? `0${min}` : min;
+  minutesContainer.textContent = `${min}:${sec}.${miliseconds}`;
+  return minutesContainer.textContent;
+}
+// Запускаем функцию reset
+reset.addEventListener("click", handleReset);
+function handleReset() {
+  clearInterval(timerId);
+  counter = 0;
+  minutesContainer.textContent = `00:00.0`;
+}
 
 /*
   ⚠️ ЗАДАНИЕ ПОВЫШЕННОЙ СЛОЖНОСТИ - ВЫПОЛНЯТЬ ПО ЖЕЛАНИЮ
