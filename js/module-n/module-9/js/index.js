@@ -52,9 +52,6 @@ function handleLap() {
   let li = document.createElement("li");
   li.textContent = upDateConterValue();
   ulLap.append(li);
-  // if (handleReset()){
-  //   li.remove();
-  // }
 }
 
 // запуск таймера
@@ -89,6 +86,7 @@ function handleReset() {
   isActive = false;
   start.textContent = "Start";
   minutesContainer.textContent = `00:00.0`;
+  ulLap.innerHTML="";
 }
 
 /*
