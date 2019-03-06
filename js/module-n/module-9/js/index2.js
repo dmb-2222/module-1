@@ -9,19 +9,23 @@ const stopwatch = {
   counter: 0,
   timerId: null,
   isActive: false,
+  start: "Start",
+  pause: "Pause",
+  continue: "Continue",
+  startPosition: "00:00.0",
+  clearLi: "",
   laps() {
     let li = document.createElement("li");
     li.textContent = minutesContainer.textContent;
     ulLap.append(li);
   },
   // Запускаем функцию reset
-  reset(onRest) {
+  reset() {
     clearInterval(this.timerId);
-    this.counter = 0;
     this.isActive = false;
-    start.textContent = "Start";
-    minutesContainer.textContent = `00:00.0`;
-    ulLap.innerHTML="";
+    start.textContent = this.start;
+    minutesContainer.textContent = this.startPosition;
+    ulLap.innerHTML=this.clearLi;
   },
   // запуск таймера
   starPauseContinue() {
@@ -37,11 +41,11 @@ const stopwatch = {
         min = min < 10 ? `0${min}` : min;
         minutesContainer.textContent = `${min}:${sec}.${miliseconds}`;
       }, 10);
-      start.textContent = "Pause";
+      start.textContent = this.pause;
     } else if (this.isActive) {
       this.isActive = false;
       clearInterval(this.timerId);
-      start.textContent = "Continue";
+      start.textContent = this.continue;
     }
   }
 };
