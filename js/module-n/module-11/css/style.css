@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.form{
+    float: left;
+    width: 200px;
+    margin: 30px;
+}
+.product-card{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: space-between;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px; 
+}
+/* .container{
+    max-width: 100%;
+} */
+.img-laptop{
+    width: 200px;
+    height: auto;
+}
