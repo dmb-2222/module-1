@@ -43,4 +43,4 @@ allUrl.addEventListener('click', function(e){
   e.preventDefault();
   const {targetId} = this.dataset;
   document.querySelector(`[data-target-id="${targetId}"]`).remove();
-})
+});
