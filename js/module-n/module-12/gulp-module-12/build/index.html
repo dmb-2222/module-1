@@ -16,9 +16,9 @@
         </form>
         <div><ul class="all-url"></ul></div>
         <template id="temp-url">
-          <li class="url-li">
+          <li data-id="{{ id }}">
             {{ url }}
-            <button data-target-id="{{ id }}">Удалить</button>
+            <button class="remove" data-target-id="{{ id }}">Удалить</button>
           </li>
         </template>
       </div>
