@@ -10,28 +10,39 @@ let i = 0;
 // LocalStorege
 const settingsFromLS = JSON.parse(localStorage.getItem("arr"));
 if (settingsFromLS !== null) {
-  const lastId = settingsFromLS.reduce((acc, el) => el.id, 0);
-  i = lastId;
   arr = settingsFromLS;
+  settingsFromLS.reverse();
+  const lastId = settingsFromLS.reduce((acc, el) => el.id, 0);
+  console.log(lastId);
+  i = lastId;
+  settingsFromLS.reverse();
   let result = arr.reduce((acc, el) => acc + mark(el), "");
   allUrl.innerHTML = result;
+
+  const btnsLs = Array.from(document.querySelectorAll(".remove"));
+  btnsLs.forEach(btn => {
+    btn.addEventListener("click", function(e) {
+      arr = arr.filter(el => el.id !== +this.dataset.targetId);
+      document.querySelector(`[data-id="${this.dataset.targetId}"]`).remove();
+      localStorage.setItem("arr", JSON.stringify(arr));
+    });
+  });
 }
-console.log(arr);
+
 function userInput(e) {
   e.preventDefault();
   i++;
   const isValidInput = input.value.length !== 0;
   const isValidUrls = arr.find(urles => urles.url === input.value);
-  console.log(arr);
+
   if (isValidInput && !isValidUrls) {
     if (settingsFromLS === null) {
-      arr.push({ id: i, url: input.value });
+      arr.unshift({ id: i, url: input.value });
       let result = arr.reduce((acc, el) => acc + mark(el), "");
       localStorage.setItem("arr", JSON.stringify(arr));
-      // let result = settingsFromLS.reduce((acc, el) => acc + mark(el), "");
       allUrl.innerHTML = result;
     } else {
-      arr.push({ id: i, url: input.value });
+      arr.unshift({ id: i, url: input.value });
       let result = settingsFromLS.reduce((acc, el) => acc + mark(el), "");
       localStorage.setItem("arr", JSON.stringify(arr));
       allUrl.innerHTML = result;
@@ -54,12 +65,11 @@ function userInput(e) {
           document
             .querySelector(`[data-id="${this.dataset.targetId}"]`)
             .remove();
-          // localStorage.setItem("arr", JSON.stringify(arr));
+          localStorage.setItem("arr", JSON.stringify(arr));
         }
       });
     });
   } else alert("Вы ввели пустое значение или такой адрес уже есть");
-  localStorage.setItem("arr", JSON.stringify(arr));
   form.reset();
 }
 form.addEventListener("submit", userInput);
