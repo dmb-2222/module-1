@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <form class="form">
+            <label for="input"></label>
+            <input type="url" id="input" placeholder="введите адрес">
+            <button type="submit" class="button" >SUBMIT</button>
+        </form>
+
+                
+        <template class="template">
+            <li class="card-item">
+                <div class="card">
+                    <a href="{{url}}" class="link">{{url}}</a>
+                    <button class="button" data-action ="remove">Удалить</button>
+                </div>
+            </li>
+        </template>
+        
+        <ul class="card-list">
+        </ul>
+
+    </div>
+    <script type="text/javascript" src="bundle.js"></script></body>
+</html>
