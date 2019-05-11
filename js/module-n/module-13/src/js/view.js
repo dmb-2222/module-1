@@ -24,12 +24,10 @@ export default class Veiw extends EventEmitter {
     this.emit("add", value);
   }
 
-  makeMarkUp(arr) {
+  makeMarkUp(arr=[]) {
     this.urlList.innerHTML = "";
-
-    let markUp = arr.reduce((acc, url) => acc + this.template(url), "");
-
-    this.urlList.insertAdjacentHTML("afterbegin", markUp);
+      let markUp = arr.reduce((acc, url) => acc + this.template(url), "");
+      this.urlList.insertAdjacentHTML("afterbegin", markUp);
     this.form.reset();
   }
 
@@ -39,7 +37,7 @@ export default class Veiw extends EventEmitter {
       this.emit("remove", e);
     }
   }
-  
+
   onLocalStor() {
     this.emit("LocalStor");
   }
