@@ -6,6 +6,7 @@ export default class Veiw extends EventEmitter {
     super();
     this.urlList = document.querySelector(".url-list");
     this.sourse = document.querySelector(".template").innerHTML.trim();
+    console.log(this.sourse)
     this.template = Handlebars.compile(this.sourse);
     this.form = document.querySelector(".form");
     this.input = this.form.querySelector("#input");
