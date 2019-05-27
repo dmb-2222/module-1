@@ -104,7 +104,6 @@ let delInput = document.querySelector("#delete input");
 
 function removeUser(e) {
   e.preventDefault();
-  console.log(delInput.value);
   fetch(`https://test-users-api.herokuapp.com/users/${delInput.value}`, {
     method: "DELETE",
     headers: {

@@ -16,9 +16,8 @@ if (amount === null) {
       alert("Нам очень жаль, приходите еще!");
     }
   }
-} 
-else if (amount <= SharmAvailable) {
-    let yes = confirm("Есть места в группе Шарм, вы согласны?");
+} else if (amount <= SharmAvailable) {
+  let yes = confirm("Есть места в группе Шарм, вы согласны?");
   {
     if (yes) {
       alert("Приятного путешествия в группе Шарм");
@@ -26,9 +25,8 @@ else if (amount <= SharmAvailable) {
       alert("Нам очень жаль, приходите еще!");
     }
   }
-}
-else if (amount <= HurgadaAvailable) {
-    let yes = confirm("Есть места в группе Хургада, вы согласны?");
+} else if (amount <= HurgadaAvailable) {
+  let yes = confirm("Есть места в группе Хургада, вы согласны?");
   {
     if (yes) {
       alert("Приятного путешествия в группе Хургада");
@@ -36,7 +34,6 @@ else if (amount <= HurgadaAvailable) {
       alert("Нам очень жаль, приходите еще!");
     }
   }
-}
-else {
+} else {
   alert("Извините, столько мест нет ни в одной группе!");
 }

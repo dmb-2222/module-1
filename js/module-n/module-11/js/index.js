@@ -145,7 +145,7 @@ function userChoice(e) {
       filter.release_date.push(jsFormInput[i].value);
     }
   }
-  // выводотфильтрованого товара
+  // вывод отфильтрованого товара
   getFilter(filter);
   cards = result.reduce((acc, el) => acc + hand(el), "");
   cardProduct.innerHTML = cards;

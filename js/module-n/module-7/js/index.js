@@ -47,7 +47,6 @@ let body = document.querySelector("body");
 const createPostCard = function(obj) {
   // craete element HTML
   let cardFilms = document.createElement("div");
-  // console.log(cardFilms); ?????? спросить на паре
   let imgCard = document.createElement("img");
   let movieBodyDiv = document.createElement("div");
   let h2 = document.createElement("h2");
@@ -90,15 +89,3 @@ const createCards = function(posts) {
   }
 };
 createCards(posts);
-
-// const summ = function (){
-//   let a =5;
-//   let b= 6;
-//   let c = a+b;
-//   return c
-// }
-// const summ2 = function() {
-//   let a = summ();
-//   return a
-// }
-// console.log(summ2());
