@@ -5,20 +5,19 @@
 }
 
 body {
-  background-color: #e7ecf2;
+  margin-top: 40px;
 }
 
 .profile {
   width: 250px;
   border: solid #f8f9fa 2px;
   border-radius: 5px;
-  padding-left: 20px;
-  margin-top: 20px;
   text-align: center;
+  margin: 0 auto;
+  padding-top: 40px;
 }
 .description {
   text-align: center;
-  background-color: white;
   padding-bottom: 20px;
   padding-top: 30px;
 }
@@ -33,7 +32,8 @@ body {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  width: 250px;
+  background-color:#e7ecf2;
+  
 }
 .tag,
 .location {
@@ -47,9 +47,10 @@ li {
 .label {
   display: flex;
   justify-content: space-around;
-  width: 74px;
+  width: 80px;
   font-size: 14px;
-  color: #828d99;
   align-items: center;
-  margin-top: 12px
+  margin-top: 12px;
+  color: #828d99;
+  
 }

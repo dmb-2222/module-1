@@ -1,0 +1,70 @@
+.container {
+  background-color: #dbdbdb;
+  max-width: 900px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.pricing_plan {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+  justify-content: space-between;
+}
+.item {
+  width: 250px;
+  height: 400px;
+  background-color: #fff;
+}
+.icon {
+  display: block;
+  padding-top: 60px;
+  height: 100px;
+}
+.icon_img {
+  width: auto;
+  height: 100%;
+}
+.label {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #d28a5f;
+}
+.item:nth-child(2n) .label {
+  color: silver;
+}
+.item:nth-child(3n) .label {
+  color: gold;
+}
+.capacity {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+.description {
+  font-size: 10px;
+  width: 200px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.price {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.button {
+  width: 150px;
+  height: 30px;
+  background-color: #d28a5f;
+  border: 0;
+  color: #fff;
+}
+.item:nth-child(2n) .button {
+  background-color: silver;
+}
+.item:nth-child(3n) .button {
+  background-color: rgb(243, 208, 12);
+}

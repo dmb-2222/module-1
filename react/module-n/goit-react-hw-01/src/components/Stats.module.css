@@ -1,0 +1,39 @@
+.stats_section {
+  width: 500px;
+  height: 200px;
+  margin: 60px auto;
+  padding-top: 20px;
+  text-align: center;
+  background-color: #eff3f6;
+}
+li {
+  list-style-type: none;
+}
+.title {
+  background-color: #fff;
+  width: 433px;
+  margin: 0 auto;
+  height: 90px;
+  line-height: 90px;
+}
+.stat_list {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  width: 320px;
+  color: #fff;
+}
+.item {
+  background-color: #800080;
+}
+.item:nth-child(odd) {
+  background-color: #d2691e;
+}
+.label {
+  display: flex;
+  width: 60px;
+  color: #fff;
+  justify-content: center;
+  height: 40px;
+  line-height: 40px;
+}
